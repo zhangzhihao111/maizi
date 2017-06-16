@@ -1,0 +1,82 @@
+@import url('reset.css');
+.header > div {
+  height: 30px;
+}
+.header > div:nth-child(1) {
+  background: #5b83ad;
+}
+.header > div:nth-child(2) {
+  background: #6c94be;
+}
+.header > div:nth-child(3) {
+  background: #7da5cf;
+}
+.header > div:nth-child(4) {
+  background: #8eb6e0;
+}
+.header > div:nth-child(5) {
+  background: #9fc7f1;
+}
+.main > div {
+  height: 30px;
+}
+.main > div:nth-child(1) {
+  background: #222222;
+}
+.main > div:nth-child(2) {
+  background: #333333;
+}
+.main > div:nth-child(3) {
+  background: #555555;
+}
+.main > div:nth-child(4) {
+  background: #777777;
+}
+.main > div:nth-child(5) {
+  background: #eeeeee;
+}
+.goods input {
+  position: absolute;
+  opacity: 0;
+}
+.goods input + label {
+  width: 35px;
+  height: 35px;
+  background: url(../img/radio.png) no-repeat bottom;
+  display: block;
+}
+.goods input:checked + label {
+  background: url(../img/radio.png) no-repeat;
+}
+.btn_radio input {
+  position: absolute;
+  opacity: 0;
+}
+.btn_radio input + label {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: url(../img/an.png) no-repeat 0 -25px;
+  display: inline-block;
+  padding-left: 30px;
+  -webkit-transition: background-position 0.1s linear;
+}
+.btn_radio input:checked + label {
+  background: url(../img/an.png) no-repeat 0 0;
+}
+.btn_check input {
+  position: absolute;
+  opacity: 0;
+}
+.btn_check input + label {
+  width: 25px;
+  height: 25px;
+  background: url(../img/an.png) no-repeat 0 -75px;
+  display: inline-block;
+  padding-left: 30px;
+  line-height: 25px;
+  -webkit-transition: background-position 0.1s linear;
+}
+.btn_check input:checked + label {
+  background: url(../img/an.png) no-repeat 0 -100px;
+}

@@ -1,0 +1,97 @@
+@import url('reset.css');
+
+
+@blue: #5B83AD;
+@blue111:@blue+#111;
+@blue222:@blue+#222;
+@blue333:@blue+#333;
+@blue444:@blue+#444;
+
+//lighten为less的函数   lighten(@color, 10%); 亮度增加 10%
+@gray-darker:  lighten(#000, 13.5%); // #222
+@gray-dark:    lighten(#000, 20%);   // #333
+@gray:         lighten(#000, 33.5%); // #555
+@gray-light:   lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 93.5%); // #eee
+
+
+.f(@f:left){
+    float:@f;
+}
+.header{
+    &>div{
+        height:30px;
+        &:nth-child(1){background: @blue;}
+        &:nth-child(2){background: @blue111;}
+        &:nth-child(3){background: @blue222;}
+        &:nth-child(4){background: @blue333;}
+        &:nth-child(5){background: @blue444;}
+    }   
+}
+
+.main{
+    &>div{
+        height:30px;
+        &:nth-child(1){background: @gray-darker;}
+        &:nth-child(2){background: @gray-dark;}
+        &:nth-child(3){background: @gray;}
+        &:nth-child(4){background: @gray-light;}
+        &:nth-child(5){background: @gray-lighter;}
+    }
+   
+}
+
+.goods{
+    input{
+        position:absolute;
+        opacity: 0;
+        &+label{
+            width:35px;
+            height:35px;
+            background:url(../img/radio.png) no-repeat bottom;
+            display: block;
+        }
+        &:checked+label{
+            background:url(../img/radio.png) no-repeat;
+        }
+    }
+}
+
+.btn_radio{
+    input{
+        position:absolute;
+        opacity: 0;
+        &+label{
+            width:25px;
+            height:25px;
+            line-height:25px;
+            background:url(../img/an.png) no-repeat 0 -25px;
+            display:inline-block;
+            padding-left:30px;
+            -webkit-transition:background-position 0.1s linear;
+        }
+        &:checked+label{
+            background:url(../img/an.png) no-repeat 0 0;
+        }
+    }
+}
+.btn_check{
+    input{
+        position:absolute;
+        opacity: 0;
+        &+label{
+            width:25px;
+            height:25px;
+            background:url(../img/an.png) no-repeat 0 -75px;
+            display:inline-block;
+            padding-left: 30px;
+            line-height:25px;
+            -webkit-transition:background-position 0.1s linear;
+        }
+        &:checked+label{
+            background:url(../img/an.png) no-repeat 0 -100px;
+          
+        }
+    }
+    
+}

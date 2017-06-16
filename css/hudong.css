@@ -1,0 +1,22 @@
+#logo{
+	padding-top: 5px;
+}
+#logo img{
+	height: 35px;
+}
+#banner{
+	height:350px;
+	background: url(../img/blue-circles.svg) repeat;
+	background-size:3000px;
+	margin-bottom: 30px;
+}
+#main  img{
+	width: 100%;
+}
+#main{
+	text-align: center;
+}
+#main p{
+	width: 200px;
+	margin: 0 auto;
+}
